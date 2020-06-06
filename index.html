@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+  <title>Bolsa de trabajo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/estilos.css" type="text/css"/>
+  
+</head>
+<!--menú-->
+<body id="bolsa de trabajo" data-spy="scroll" data-target=".navbar" data-offset="50"> <!--Colapsa las secciones-->
+<header>
+<nav class="navbar navbar-fixed-top"> <!--navbar fija-->
+  <div class="container-fluid"> <!-- Container-fluid se adecua al ancho de la página-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- data-toggle formato para cuando se colapsa la página-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> <!-- 3 líneas del menú cuando la página se colapsa-->                 
+      </button>
+      <img id="logo" src="imágenes/logo.png">
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li id="t"><a href="#testimonios">TESTIMONIOS</a></li>
+        <li><a href="#formulario">BOLSA DE TRABAJO</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Slider-->
+<section id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="imágenes/1.jpg">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+      <div class="item">
+        <img class="imagen" src="imágenes/2.jpg">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img class="imagen" src="imágenes/3.jpg">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+
+      <div class="item">
+        <img class="imagen" src="imágenes/4.jpg">
+        <div class="carousel-caption">
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</section>
+</header>
+<!-- Segunda sección de la página -->
+<section id="servicios">
+  <div id="entrevista">
+  <img class="serv" src="imágenes/entrevista.jpg" width="200px" height="200px">
+  <h3>Entrevista</h3>
+  </div>
+  <div id="capacitacion">
+  <img class="serv" src="imágenes/capacitacion.png" width="200px" height="200px">
+  <h3>Capacitación</h3>
+  </div>
+  <h2>SERVICIOS</h2>
+  <p>Ofrecemos <b>entrevista</b> de manera gratuita a los interesados en el empleo;<br> en caso de ser aceptado por la empresa se le dará una 
+    <b>capacitación</b> para <br> el trabajo para que se desarrolle de una manera eficaz.</p>
+</section>
+
+<section id="testimonios">
+  <img src="imágenes/p1.png" width="50%" height="100%">
+  <h3>Ellos han logrado cumplir sus sueños!</h3>
+  <div class="arriba"><img id="p2" src="imágenes/p2.jpg" width="300px" height="200px">
+  <img id="p3" src="imágenes/p3.jpg" width="300px" height="200px"></div>
+  <h2>TESTIMONIOS</h2>
+  <img id="p4" src="imágenes/p4.jpg" width="300px" height="200px">
+  <img id="p5" src="imágenes/p5.jpg" width="300px" height="200px">
+</section>
+
+<!-- Sección de Contacto -->
+<section id="formulario" class="container">
+  <h2 class="text-center">BOLSA DE TRABAJO</h2>
+  <p class="text-center"><em>Ingresa tus datos</em></p>
+    <div class="col-md-8" id="frm">
+        <form action="#" method="post" name="contacto">
+      <div class="row">
+          
+        <div class="col-sm-6 form-group">
+            
+          <input class="form-control" id="name" name="name" placeholder="Nombre Completo" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Aptitudes y habilidades" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Enviar</button>
+        </div>
+      </div>
+        </form>
+    </div>
+  </section>
+
+<!-- Footer -->
+<footer>
+  <h2 id="subtitulo">CONTACTO</h2>
+  <section id="contacto">
+  <h3>Síguenos en nuestras redes sociales!</h3>
+  <a href="https://www.facebook.com/"><img src="imágenes/facebook.png" width="80px" height="80px">
+  <a href="https://www.instagram.com/"><img src="imágenes/instagram.png" width="80px" height="80px"></a>
+  <a href="https://twitter.com/explore"><img src="imágenes/twitter.png" width="70px" height="70px"></a>
+  <a href="https://www.youtube.com/"><img src="imágenes/youtube.png" width="80px" height="80px"></a>
+  </section>
+  <nav class="navbar navbar-bottom">
+  <div class="container-fluid"> <!-- Container-fluid se adecua al ancho de la página-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- data-toggle formato para cuando se colapsa la página-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> <!-- 3 líneas del menú cuando la página se colapsa-->                 
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a href="#inicio">INICIO</a></li>
+        <li><a href="#servicios">SERVICIOS</a></li>
+        <li id="t"><a href="#testimonios">TESTIMONIOS</a></li>
+        <li><a href="#bolsa de trabajo">BOLSA DE TRABAJO</a></li>
+        <li><a href="#contacto">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</footer>
+
+<!--modal-->
+<article class="modal fade" id="miModal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button> <!--&times botón de cerrar-->
+        <h3>Encabezado del modal</h3>
+      </div>
+      <div class="modal-body">
+        <p>Aquí se puede poner una imagen o un formulario</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</article>
+
+</body>
+</html>
